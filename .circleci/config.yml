@@ -18,9 +18,9 @@ jobs:
             - ~/.cache/yarn
             - ./node_modules
       - run:
-        name: ng-build
-        command: yarn ng --build --prod --aot --no-progress
+          name: ng-build
+          command: yarn ng --build --prod --aot --no-progress
 
       - run:
-        name: ng-test
-        command: yarn test -- --single-run --no-progress
+          name: ng-test
+          command: yarn test -- --single-run --no-progress
