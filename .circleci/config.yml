@@ -19,8 +19,8 @@ jobs:
             - ./node_modules
       - run:
           name: ng-build
-          command: yarn ng --build --prod --aot --no-progress
+          command: yarn build
 
       - run:
           name: ng-test
-          command: yarn test -- --single-run --no-progress
+          command: yarn test
