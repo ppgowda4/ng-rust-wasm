@@ -16,12 +16,12 @@ describe('AppComponent', () => {
   it(`should have as title 'ng-rust-wasm'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ng-rust-wasm');
+    expect(app.title).toEqual('Angular + WebAssembly + Rust');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ng-rust-wasm!');
+    expect(compiled.querySelector('h1').textContent).toContain('Future of WEB!');
   }));
 });
