@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0",
     "build": "ng build --prod --aot --no-progress",
     "test": "ng test --watch=false --no-progress",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-wasm": "cd ./src/rustwasm_modules/ && cargo build --target wasm32-unknown-unknown --release && wasm-gc target/wasm32-unknown-unknown/release/rustwasm_modules.wasm ../assets/rustwasm_modules_sm.wasm"
   },
   "private": true,
   "dependencies": {
