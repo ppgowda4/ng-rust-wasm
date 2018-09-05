@@ -37,3 +37,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# rust and wasm files
+/src/rustwasm_modules/target/*
+/src/assets/rustwasm_modules_sm.wasm

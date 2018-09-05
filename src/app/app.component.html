@@ -1,20 +1,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="center">
+  <div style="text-align:center">
+    <h1 style="color: #007db8">Future of WEB!</h1>
+
+    <h1>
+        {{title}}
+    </h1>
+    <img width="300" height="300" alt="Angular Logo" src="../assets/angular.png">
+    <img width="300" height="290" alt="WASM Logo" src="../assets/wasm.jpg">
+    <img width="300" height="300" alt="RUST Logo" src="../assets/rust.png">
+  </div>
+  <p style="color: #6ea204; font-size: 18px;"><strong>Rust</strong> language based <strong>WebAssembly(WASM)</strong> running inside <strong>Angular</strong> application</p>
+
+  <div class="container">
+      <div class="flex-row">
+          <label>Factorial</label>
+          <input type="text" [value]="factor" (input)="factor = $event.target.value"/>
+          <button (click)="calcFactorial()">calculate factorial</button>
+      </div>
+      <h2 style="color: chocolate">Result: {{factorial}}</h2>
+      
+        <div class="flex-row">
+            <label>Fibonacci</label>
+            <input type="text" [value]="fibo" (input)="fibo = $event.target.value"/>
+            <button (click)="calcFibonacci()">calculate fibonacci</button>
+        </div>
+
+        <h2 style="color: chocolate">Result: {{fibonacci}}</h2>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
 

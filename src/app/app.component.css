@@ -1,0 +1,23 @@
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    margin: 4px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
